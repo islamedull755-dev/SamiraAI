@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#080713"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Samira AI"
+                android:textColor="#F8F2FF"
+                android:textSize="27sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/statusText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/status_pill"
+                android:paddingHorizontal="13dp"
+                android:paddingVertical="7dp"
+                android:text="● ONLINE"
+                android:textColor="#68FFB1"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/avatarImage"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_marginTop="14dp"
+            android:contentDescription="Samira anime assistant avatar"
+            android:scaleType="centerCrop"
+            android:src="@drawable/samira_avatar"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Hello, Eidul Boss!"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="I'm Samira. How can I help you?"
+            android:textColor="#CDBBEE"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/input_bg"
+            android:hint="Message Samira..."
+            android:inputType="textCapSentences|textMultiLine"
+            android:minHeight="54dp"
+            android:padding="14dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A99BBE"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_weight="1"
+                android:text="Send"/>
+            <Button
+                android:id="@+id/voiceButton"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="Speak"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/responseText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/panel_bg"
+            android:minHeight="72dp"
+            android:padding="14dp"
+            android:text="Samira is ready. Connect a secure AI backend to enable live AI replies."
+            android:textColor="#EDE4FF"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="QUICK ACTIONS"
+            android:textColor="#BDA3E8"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:columnCount="2">
+            <Button android:id="@+id/chatAction" android:layout_width="0dp" android:layout_height="58dp" android:layout_columnWeight="1" android:text="AI Chat"/>
+            <Button android:id="@+id/callAction" android:layout_width="0dp" android:layout_height="58dp" android:layout_columnWeight="1" android:text="Calling Mode"/>
+            <Button android:id="@+id/codingAction" android:layout_width="0dp" android:layout_height="58dp" android:layout_columnWeight="1" android:text="Coding Assistant"/>
+            <Button android:id="@+id/musicAction" android:layout_width="0dp" android:layout_height="58dp" android:layout_columnWeight="1" android:text="Music Search"/>
+            <Button android:id="@+id/phoneAction" android:layout_width="0dp" android:layout_height="58dp" android:layout_columnWeight="1" android:text="Phone Tools"/>
+            <Button android:id="@+id/settingsAction" android:layout_width="0dp" android:layout_height="58dp" android:layout_columnWeight="1" android:text="Settings"/>
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="Powered by Samira AI  •  Owner: Eidul Boss"
+            android:textColor="#A88BD6"
+            android:textSize="11sp"/>
+    </LinearLayout>
+</ScrollView>
